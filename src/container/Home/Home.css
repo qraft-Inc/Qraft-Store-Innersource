@@ -1,0 +1,31 @@
+.app_wrapper h1{
+    font-family: var(--font-base);
+    color: var(--color-white);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-size: 80px;
+    line-height: 100px;
+}
+
+
+.app_wrapper-img img{
+    float: left;
+    width:  600px;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%;
+    animation: img 3.7s linear infinite;
+  }
+
+  @keyframes img {
+    0%, 100% {
+      border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%;
+    }
+    33% {
+      border-radius: 42% 28% 48% 48% / 28% 28% 72% 72%;
+    }
+    66% {
+      border-radius: 100% 56% 56% 100% / 100% 100% 56% 56%;
+    }
+  }
+
