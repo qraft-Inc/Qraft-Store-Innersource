@@ -1,12 +1,13 @@
 import React, { useState } from 'react'
 import { FaArrowLeft } from "react-icons/fa";
+
 import BioInformation from '../FormPages/BioInformation';
-import MusicianSkills from '../FormPages/MusicianSkills';
-import picture from './qraftlogo.png';
+import MusicianBio from '../FormPages/MusicianBio';
+// import MusicianSkills from '../FormPages/MusicianSkills';
+import MusicianApplicationskills from '../FormPages/ MusicianApplicationskills'
 
 
-
-export const Musician = () => {
+export const MusicianApplication = () => {
   
     const [page, setPage] = useState(0); //sets the page initially at zero
     
@@ -16,7 +17,9 @@ export const Musician = () => {
         if (page === 0) {
             return <BioInformation/>;
         } else if (page === 1) {
-            return <MusicianSkills/>
+            return <MusicianApplicationskills/>;  
+          }else if (page === 1){   
+            return<MusicianBio/>;
         }
     }
 
@@ -28,10 +31,7 @@ export const Musician = () => {
             setPage((currPage) => currPage - 1);  /**decreases the page state from current page by 1 */
         }}>
         </FaArrowLeft>
-        <img src={picture} alt='./qraftlogo.png'></img>
-
         <div className='progress-bar'>
-
             <div style={{ width: page === 0 ? "50%" : "100%"}} 
             ></div>
         </div> 
@@ -46,10 +46,10 @@ export const Musician = () => {
         onClick={() => {
             setPage((currPage) => currPage + 1);  /**increments the page state from current page by 1 */
         }}>
-            Continue
+            Preview your conversation
         </button>
     </div>
   )
 }
 
-export default Musician
+export default MusicianApplication

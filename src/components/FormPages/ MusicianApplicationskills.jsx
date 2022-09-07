@@ -1,18 +1,16 @@
 import React from 'react'
-// import picture from './qraftlogo.png';
 
-
-export const MusicianSkills = () => {
+export const MusicianApplication = () => {
   return (
     <div className="skills-container">
-        {/* <img src={picture} alt='./qraftlogo.png'></img> */}
         <label for="portfolio" >Link to portfolio <span class="required">*</span></label>
         <input type="url" id="portfolio" name="portfolio" />
         <label htmlFor="genre">What Style/Genre of music do you do? <span class="required">*</span>
         <input type="text" list="genre" />
           <datalist id="genre">
+            <option>Rock</option>
             <option>Afro</option>
-            <option>Pop</option>
+            <option>Hip Pop</option>
             <option>Reggee</option>
             <option>Blues</option>
           </datalist>
@@ -25,4 +23,4 @@ export const MusicianSkills = () => {
   )
 }
 
-export default MusicianSkills
+export default MusicianApplication

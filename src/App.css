@@ -38,6 +38,11 @@
 .skills-container {
   padding: 10px 5px;
 }
+/* QRAFT LOGO */
+img{
+  margin-left: 460px;
+  height: 60px;
+}
 
 .skills-container input {
   display: block;

@@ -1,8 +1,10 @@
 import React from 'react'
+// import picture from './qraftlogo.png'
 
 function BioInformation() {
   return (
     <div className='bioInfo-container'>
+      {/* <img src={picture} alt='./qraftlogo.png'></img> */}
       <div className='input_field'>
         <span className='details'>First Name</span>
         <input type="text" className='input' placeholder=' first name'/>
