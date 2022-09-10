@@ -1,0 +1,79 @@
+body {
+    background-color: #c5aec0;
+} 
+
+.container {
+    margin: 150px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 90px;
+    margin-right: 350px;
+
+}
+
+.forms {
+    color: rgb(17, 20, 20);
+}
+
+.txt-fld input {
+    padding: 8px;
+    border-radius: 10px;
+    margin-left: 10%;
+
+}
+
+
+.logo .signup {
+    padding-left: 450px;
+}
+
+.container h1 {
+    font-size: 40px;
+} 
+
+
+
+.txt-fld label input {
+    display: flex;
+    margin: 10px;
+    border: 1px solid rgb(150, 143, 143) ;
+}
+
+.txt-fld label {
+    margin: 10px;
+    font-size: 20px;
+}
+
+.txt-fld input {
+    width: 330px;
+    height: 20px;
+} 
+
+ button {
+    background-color: #dd3b1e;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    margin: 30px 3px; 
+    border-radius: 10px; 
+    width: 380px;
+     height: 30px;
+ }
+ .container2{
+    background-color: black;
+    padding: 20px;
+    color: beige;
+    margin-left: 100%;
+    /* max-width: 100px; */
+    
+
+ }
+ /* .all{
+    display: flex;
+ }
+    */
+    
+   
+
+ 
