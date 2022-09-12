@@ -1,14 +1,14 @@
-import Carousel from './Carousel/Carousel';
-import Market from './Market/Market';
-import Footer from './Footer/Footer';
+import Events from './Events/Events';
+import Category from './Category/Category';
 import Testimonials from './Testimonials/Testimonials';
 import Home from './Home/Home';
+import Service from './Service/Service';
 
 
 export {
-  Carousel,
-  Market,
-  Footer,
+  Events,
+  Category,
   Testimonials,
   Home,
+  Service,
 };

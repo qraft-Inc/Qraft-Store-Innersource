@@ -1,0 +1,52 @@
+.app_market-container h3{
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--color-pink);
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-family: var(--font-base);
+}
+
+.app_market-container p{
+    color: var(--color-black);
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 19px;
+}
+
+.app_market-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+.cards {
+    width: 250px;
+    margin: 0 15px;
+    transition: 1s;
+    border-radius: 5px;
+}
+
+.cards img {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 400px;  
+    border-radius: 5px;
+}
+
+.cards p {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.cards:hover {
+    cursor: pointer;
+    transform: translateY(-10px);
+}
+
+.cards p:hover{
+    color: var(--color-pink);
+}

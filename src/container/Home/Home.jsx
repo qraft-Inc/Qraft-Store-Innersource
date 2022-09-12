@@ -1,5 +1,6 @@
 import React from 'react';
 import { images } from '../../constants';
+
 import './Home.css';
 
 const Home = () => (
@@ -11,7 +12,7 @@ const Home = () => (
     </div>
 
     <div className='app_wrapper-img'>
-      <img src={images.homeimg2} alt="homepage" />
+      <img src={images.homeimg2} alt='homepage' />
     </div>
   </div>
 );

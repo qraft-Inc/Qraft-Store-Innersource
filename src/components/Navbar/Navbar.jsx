@@ -22,26 +22,26 @@ const [toggleMenu, setToggleMenu] = useState(false);
             </form>
         </div>
         <ul className='app_navbar-links'>
-            <li className="p_opensans"><a href="#home" className='active'>Home</a></li>
-            <li className="p_opensans"><a href="#artists">Featured artists</a></li>
-            <li className="p_opensans"><a href="#freelancer">Become freelancer</a></li>
+            <li className='p_opensans'><a href='#home' className='active'>Home</a></li>
+            <li className='p_opensans'><a href='#artists'>Featured artists</a></li>
+            <li className='p_opensans'><a href='#freelancer'>Become freelancer</a></li>
         </ul>
-        <div className="app_navbar-right">
+        <div className='app_navbar-right'>
             <FiShoppingCart className='cart'/>
-            <a href="#login" className="p_opensans app_sign">Sign Up </a>
-            <a href="#login" className="p_opensans app_login">Login </a>
+            <a href='#login' className='p_opensans app_sign'>Sign Up </a>
+            <a href='#login' className='p_opensans app_login'>Login </a>
         </div>
-        <div className="app_navbar-smallscreen">
+        <div className='app_navbar-smallscreen'>
             <GiHamburgerMenu className='nav_menu' color="#fff" fontSize={26} onClick={() => setToggleMenu(true)}/>
         
             {toggleMenu && (
-                <div className="app_navbar-smallscreen_overlay flex__enter slide-bottom">
-                    <MdOutlineClose fontSize={26} className="overlay_close" onClick={() => setToggleMenu(false)}/>
-                    <ul className="app_navbar-smallscreen_links">
-                        <li className="p_opensans"><a href="#home" className='active'>Home</a></li>
-                        <li className="p_opensans"><a href="#artists">Featured artists</a></li>
-                        <li className="p_opensans"><a href="#freelancer">Become freelancer</a></li>
-                </ul>
+                <div className='app_navbar-smallscreen_overlay flex_center slide-bottom'>
+                    <MdOutlineClose fontSize={26} className='overlay_close' onClick={() => setToggleMenu(false)}/>
+                    <ul className='app_navbar-smallscreen_links'>
+                        <li className='p_opensans'><a href='#home' className='active'>Home</a></li>
+                        <li className='p_opensans'><a href='#artists'>Featured artists</a></li>
+                        <li className='p_opensans'><a href='#freelancer'>Become freelancer</a></li>
+                    </ul>
                 </div>
             )}
         </div>
