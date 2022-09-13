@@ -1,0 +1,52 @@
+.app_service {
+    background: #ffd8be;
+}
+
+.app_service-box{
+	display: flex;
+	width: 100%;
+	margin: auto;
+	flex-wrap: wrap;
+	text-align: center;
+	align-items: center;
+}
+
+.services{
+	flex-basis: 50%; 
+}
+
+.services h1{
+	font-weight: 400;
+	font-size: 30px;
+	text-align: left;
+	margin-bottom: 10px;
+}
+
+.service-desc{
+	margin-bottom: 40px;
+	align-items: center;
+	display: flex;
+}
+
+.services-text p {
+	text-align: initial;
+	padding: 0 20px;
+    font-size: 18px;
+    font-weight: 400;
+
+}
+
+.service-icon .icon {
+    height: 30px;
+    width: 30px;
+	border-radius: 8px;
+    border: 1px solid #c71585;
+}
+
+.service-vid{
+	margin: auto;
+	flex-basis: 50%;
+}
+.service-vid video{
+	width: 100%;
+}

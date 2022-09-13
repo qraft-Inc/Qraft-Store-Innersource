@@ -1,0 +1,49 @@
+.app_event {
+    background: #E7E6E8;
+}
+
+.app_event-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app_event-card {
+    margin: 0 10px;
+    background-color: var(--color-black-russian);
+}
+
+.app_event-img img{
+    position: relative;
+    width: 350px;
+    height: 400px;
+    object-fit: cover;
+   
+}
+
+.image-title {
+    position: absolute;
+    background: var(--color-white);
+    padding: 5px;
+    border-radius: 5px;
+    top: 10px;
+    text-transform: capitalize;
+}
+
+.app_event-info {
+    text-align: center;
+}
+
+.app_event-info h3,
+.app_event-info p{
+    margin-bottom: 0.8rem;
+    color: var(--color-white);
+}
+
+.star,
+.star-outline{
+    color: goldenrod;
+    font-size: 15px;
+    margin-bottom: 0.6rem;
+}
+
