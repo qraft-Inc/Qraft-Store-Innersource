@@ -22,7 +22,7 @@ export default function Form(){
                     <button className='btn'>Sign in</button>
                   {/* <HorizontalRule className ="line"/>or sign up with
                   <HorizontalRule className ="line"/> */}
-                  <p>or sign up with</p>
+                  <p>______ or sign up with _____</p>
                   <div className ="icons">
                   <LinkedInIcon/>
                   <GoogleIcon/>
