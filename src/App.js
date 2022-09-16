@@ -3,7 +3,7 @@ import { Musician } from './components/ApplicationForm/Musician';
 import { Painter } from './components/ApplicationForm/Painter';
 import { Photographer } from './components/ApplicationForm/Photographer';
 
-import './App.css';
+import './components/style.css';
 
 function App() {
   return (
