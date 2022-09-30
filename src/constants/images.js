@@ -8,6 +8,7 @@ import servicevid from '../assets/servicevid.mp4';
 import event1 from '../assets/event1.JPG';
 import event2 from '../assets/event2.JPG';
 import event3 from '../assets/event3.JPG';
+import testimonial1 from '../assets/testimonial1.JPG';
 
 export default {
     homeimg1,
@@ -20,4 +21,5 @@ export default {
     event1,
     event2,
     event3,
+    testimonial1,
 };

@@ -13,7 +13,7 @@ const Service = () => {
       <h1 className='headtext_cormorant'>Why Qraft Store?</h1>
       <div class="app_service-box">
         <div class="services">
-          <h1>Great Quality</h1>
+          <h1>Community</h1>
           <div class="service-desc">
             <div class="service-icon">
               <FaHandsHelping className='icon'/>

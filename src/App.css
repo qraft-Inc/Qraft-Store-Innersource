@@ -85,3 +85,11 @@
     letter-spacing: 0.04em;
     text-transform: capitalize;
   }
+
+  .border-line {
+    width: 160px;
+    height: 5px;
+    background: var(--color-black-russian);
+    margin: 26px auto;
+    border-radius: 5px;
+  }

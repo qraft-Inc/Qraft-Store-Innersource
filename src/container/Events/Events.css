@@ -1,11 +1,12 @@
 .app_event {
     background: #E7E6E8;
+    overflow: hidden;
 }
 
-.app_event-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.app_event-title{
+    font-family: var(--font-base);
+    font-size: 40px;
+    text-align: center;
 }
 
 .app_event-card {
@@ -13,21 +14,22 @@
     background-color: var(--color-black-russian);
 }
 
-.app_event-img img{
-    position: relative;
-    width: 350px;
-    height: 400px;
-    object-fit: cover;
-   
-}
-
 .image-title {
-    position: absolute;
     background: var(--color-white);
     padding: 5px;
-    border-radius: 5px;
     top: 10px;
     text-transform: capitalize;
+    font-family: var(--font-base);
+    color: var(--color-black-russian);
+    font-size: 23px;
+    text-align: center;
+}
+
+.app_event-img img{
+    position: relative;
+    width: 370px;
+    height: 400px;
+    object-fit: cover;
 }
 
 .app_event-info {
@@ -46,4 +48,5 @@
     font-size: 15px;
     margin-bottom: 0.6rem;
 }
+
 
