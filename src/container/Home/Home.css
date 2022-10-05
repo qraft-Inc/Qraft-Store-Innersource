@@ -31,14 +31,12 @@
 
   @media screen and (max-width: 650px){
     .app_header {
-      
     	padding-bottom: 7rem;
     	overflow-x: hidden;
     }
 
-    .app_wrapper {
+    .app_wrapper-info {
     	text-align: center;
-    	
     }
     
     .app_wrapper-info h1{
@@ -47,10 +45,14 @@
       line-height: 80px;
     }
 
-    .custom_button{
-      justify-content: center;
+    .app_wrapper-info p{
+      font-size: 14px;
     }
-
+    
+    .app_wrapper-info button{
+      margin-left: 70px;
+    }
+ 
     .app_wrapper-img img {
       display: none;
     }

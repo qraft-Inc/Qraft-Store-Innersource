@@ -14,20 +14,14 @@
 
 .app_footer-newsletter h2 {
     display: flex;
-    flex-direction: column;
-}
-
-.app_footer-newsletter span:nth-child(1){
-    font-size: 24px;
-}
-
-.app_footer-newsletter span:nth-child(2){
-    font-size: 14px;
-    font-weight: 300;
+    align-items: center;
+    font-size: 26px;
 }
 
 .app_footer-newsletter form {
     margin: 20px 0;
+    width: 100%;
+    text-align: center;
 }
 
 .app_footer-newsletter form input {
@@ -90,7 +84,8 @@ hr {
 }
 
 .links h6 {
-    font-size: 18px;
+    font-size: 20px;
+    margin-bottom: 1rem;
 }
 
 .links ul {
@@ -102,12 +97,12 @@ hr {
 }
 
 .links p {
-    font-size: 13px;
+    font-size: 15px;
     color: var(--color-gray);
 }
 
 .links li a {
-    font-size: 13px;
+    font-size: 15px;
     text-decoration: none;
     transition: 0.3s ease;
     color: var(--color-gray);
@@ -115,4 +110,24 @@ hr {
 
 .lower-footer {
     text-align: center;
+}
+
+@media screen and (max-width: 700px){
+    .app_footer-newsletter h2,
+    .app_footer-newsletter form{
+        display: none;    
+    }
+
+    .app_footer-main {
+        flex-direction: column;
+        text-align: center;
+    }
+    .social-icons li a{
+        color: var(--color-pink);
+        font-size: 25px;
+    }
+    
+    .social-icons a:hover{
+        color: var(--color-gray);
+    }
 }

@@ -9,8 +9,9 @@ import './Service.css';
 
 const Service = () => {
   return (
-    <div className='app_service section_padding'>
+    <div className='app_service '>
       <h1 className='headtext_cormorant'>Why Qraft Store?</h1>
+      
       <div class="app_service-box">
         <div class="services">
           <h1>Community</h1>

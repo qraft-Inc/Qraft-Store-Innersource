@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaFacebook, FaTwitter, FaYoutube, FaWhatsapp, FaInstagram } from 'react-icons/fa';
+import { FaFacebook, FaTwitter, FaYoutube, FaInstagram } from 'react-icons/fa';
 
 
 import './Footer.css';
@@ -7,32 +7,29 @@ import './Footer.css';
 const Footer = () => (
   <div className='app_footer '>
     <div className='app_footer-newsletter'>
-      <h2>
-        <span>Subscribe Newsletter</span>
-        <span>Subscribe Newsletter to get 10% off on all our offers.</span>
-      </h2>
+      <h2>Subscribe Newsletter to get 10% off on all our offers.</h2>
       <form action="?">
         <input type="email" placeholder='Enter your email' />
         <button type='submit'>Submit</button>
       </form>
       <ul className='social-icons'>
         <li>
-          <a href="#">
+          <a href="/#">
             <FaFacebook/>
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="/#">
             <FaInstagram/>
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="/#">
             <FaYoutube/>
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="/#">
             <FaTwitter/>
           </a>
         </li>
@@ -45,10 +42,21 @@ const Footer = () => (
         <h6>Explore</h6>
         <ul>
           <li>
-            <a href="#">Artists</a>
+            <a href="/#">Artists</a>
           </li>
           <li>
-            <a href="#">Clients</a>
+            <a href="/#">Clients</a>
+          </li>
+        </ul>
+      </div>
+      <div className='links'>
+        <h6>Information</h6>
+        <ul>
+          <li>
+            <a href="/#">Terms & Conditions</a>
+          </li>
+          <li>
+            <a href="/#">Privacy Policy</a>
           </li>
         </ul>
       </div>
@@ -57,17 +65,7 @@ const Footer = () => (
         <p>Kampala</p>
         <p>Entebbe</p>
       </div>
-      <div className='links'>
-        <h6>Information</h6>
-        <ul>
-          <li>
-            <a href="#">Terms & Conditions</a>
-          </li>
-          <li>
-            <a href="#">Privacy Policy</a>
-          </li>
-        </ul>
-      </div>
+      
       <div className='links'>
         <h6>Contact</h6>
         <p>qraftacademy@gmail.com</p>

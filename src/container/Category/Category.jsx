@@ -10,19 +10,27 @@ const Category = () => (
     <div className='app_market-cards'>
       <div className='cards'>
         <img src={images.card1} alt='card one' />
-        <p>Photographer</p>
+        <div className='layer'>
+          <p>Photographer</p>
+        </div>
       </div>
       <div className='cards'>
         <img src={images.card2} alt='card two' />
-        <p>Musician</p>
+        <div className='layer'>
+          <p>Musician</p>
+        </div>
       </div>
       <div className='cards'>
         <img src={images.card3} alt='card three' />
-        <p>Painter</p>
+        <div className='layer'>
+          <p>Painter</p>
+        </div>
       </div>
       <div className='cards'>
         <img src={images.card4} alt='card four' />
-        <p>Literature</p>
+        <div className='layer'>
+          <p>Literature</p>
+        </div>
       </div>
     </div>
   </div>

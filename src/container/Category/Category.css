@@ -1,8 +1,12 @@
+.app_market-container {
+    padding: 2rem;
+}
+
 .app_market-container h3{
     font-size: 30px;
     font-weight: 700;
     color: var(--color-pink);
-    margin-top: 5rem;
+    margin-top: 2rem;
     margin-bottom: 1rem;
     text-align: center;
     font-family: var(--font-base);
@@ -11,8 +15,8 @@
 .app_market-container p{
     color: var(--color-black);
     text-align: center;
-    margin-bottom: 3rem;
-    font-size: 19px;
+    margin-bottom: 2rem;
+    font-size: 20px;
 }
 
 .app_market-cards {
@@ -23,10 +27,11 @@
 }
 
 .cards {
-    width: 250px;
-    margin: 0 15px;
+    flex-basis: 31%;
+    padding: 20px 12px;
     transition: 1s;
     border-radius: 5px;
+    box-sizing: border-box;
 }
 
 .cards img {
@@ -49,4 +54,24 @@
 
 .cards p:hover{
     color: var(--color-pink);
+}
+
+@media screen and (max-width: 700px) {
+   
+    .app_market-container h3 {
+        padding: 0 2rem;
+        font-size: 23px;
+        font-family: 'Jost', sans-serif;
+    }
+    .app_market-container p {
+        font-size: 17px;
+    }
+    .app_market-cards {
+        flex-direction: column;
+        text-align: center;
+    }
+    .cards p {
+        font-size: 20px;
+    }
+   
 }

@@ -1,5 +1,6 @@
 .app_service {
     background: #ffd8be;
+	padding: 2rem;
 }
 
 .app_service-box{
@@ -49,4 +50,30 @@
 }
 .service-vid video{
 	width: 100%;
+}
+
+@media screen and (max-width: 770px) {
+	.services{
+	  flex-basis: 100%; 
+    }
+	.app_service {
+	  padding-bottom: 50px;
+    }
+    .app_service h1 {
+	  font-size: 30px;  
+	  font-family: 'Jost', sans-serif;
+	  text-align: center;
+    }
+    .service-vid{
+	  flex-basis: 100%;
+    }
+    .service-vid video{
+	  width: 100%;
+    }
+    .services h1{
+	  font-size: 20px;
+	  font-weight: 500;
+	  text-align: left;
+    }
+	
 }
