@@ -1,0 +1,62 @@
+.app_event {
+    background: #E7E6E8;
+    overflow: hidden;
+}
+
+.app_event-title{
+    font-family: var(--font-base);
+    font-size: 40px;
+    text-align: center;
+}
+
+
+.app_event-card {
+    margin: 0 10px;
+    background-color: var(--color-black-russian);
+}
+
+.image-title {
+    background: var(--color-white);
+    padding: 5px;
+    top: 10px;
+    text-transform: capitalize;
+    font-family: var(--font-base);
+    color: var(--color-black-russian);
+    font-size: 23px;
+    text-align: center;
+}
+
+.app_event-img img{
+    position: relative;
+    width: 370px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.app_event-info {
+    text-align: center;
+}
+
+.app_event-info h3,
+.app_event-info p{
+    margin-bottom: 0.8rem;
+    color: var(--color-white);
+}
+
+.star,
+.star-outline{
+    color: goldenrod;
+    font-size: 15px;
+    margin-bottom: 0.6rem;
+}
+
+@media screen and (max-width: 700px) {
+    .app_event-title{
+        font-size: 30px;  
+	    font-family: 'Jost', sans-serif; 
+    }
+    .app_event-container {
+        flex-direction: column;
+    }
+    
+}

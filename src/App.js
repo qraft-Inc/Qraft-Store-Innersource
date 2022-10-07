@@ -1,12 +1,26 @@
-import Forms from './Forms';
+
+import React from 'react'
+
+import { Events, Home, Category, Testimonials, Service } from './container';
+import { Navbar, Footer } from './components';
+
+
 import './App.css';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <Forms></Forms>
+
+    <div>
+      <Navbar/>
+      <Home/>
+      <Category/>
+      <Service/>
+      <Events/>
+      <Testimonials/>
+      <Footer/>
+
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

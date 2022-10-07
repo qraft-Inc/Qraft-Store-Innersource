@@ -1,0 +1,133 @@
+.app_footer {
+    background: var(--color-black-russian);
+    color: var(--color-white);
+    padding: 2rem 16vw;
+}
+
+.app_footer-newsletter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 10rem;
+}
+
+.app_footer-newsletter h2 {
+    display: flex;
+    align-items: center;
+    font-size: 26px;
+}
+
+.app_footer-newsletter form {
+    margin: 20px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.app_footer-newsletter form input {
+    height: 40px;
+    width: 17vw;
+    padding: 0 15px;
+    outline: none;
+}
+
+.app_footer-newsletter form button {
+    height: 40px;
+    width: 5rem;
+    color: var(--color-white);
+    background-color: var(--color-pink);
+    border: none;
+}
+
+.social-icons {
+    display: flex;
+}
+
+.social-icons li{
+    list-style: none;
+    margin: 0 12px;
+}
+
+.social-icons li a{
+    text-decoration: none;
+    color: var(--color-gray);
+    font-size: 20px;
+}
+
+.social-icons a:hover{
+    color: var(--color-pink);
+}
+
+hr {
+    background-color: var(--color-gray);
+    border: 1px solid var(--color-gray);
+    margin: 30px 0;
+}
+
+.app_footer-main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 30px;
+}
+
+.store {
+    position: relative;
+    font-size: 25px;
+    left: 22px;
+    top: -10px;
+    color: var(--color-pink);
+}
+
+.links {
+    margin: 10px 0;
+}
+
+.links h6 {
+    font-size: 20px;
+    margin-bottom: 1rem;
+}
+
+.links ul {
+    margin: 10px 0;
+}
+
+.links li {
+    list-style: none;
+}
+
+.links p {
+    font-size: 15px;
+    color: var(--color-gray);
+}
+
+.links li a {
+    font-size: 15px;
+    text-decoration: none;
+    transition: 0.3s ease;
+    color: var(--color-gray);
+}
+
+.lower-footer {
+    text-align: center;
+}
+
+@media screen and (max-width: 700px){
+    .app_footer-newsletter h2,
+    .app_footer-newsletter form{
+        display: none;    
+    }
+
+    .app_footer-main {
+        flex-direction: column;
+        text-align: center;
+    }
+    .social-icons li a{
+        color: var(--color-pink);
+        font-size: 25px;
+    }
+    
+    .social-icons a:hover{
+        color: var(--color-gray);
+    }
+}
