@@ -2,8 +2,12 @@ import React, { useState } from 'react'
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { FiShoppingCart } from 'react-icons/fi';
 import { AiOutlineSearch } from 'react-icons/ai';
-import { MdOutlineClose } from 'react-icons/md'
+import { MdOutlineClose } from 'react-icons/md';
 
+import { Link } from "react-router-dom";
+
+
+import { images } from '../../constants'
 import './Navbar.css'
 
 const Navbar = () => {
@@ -13,7 +17,7 @@ const [toggleMenu, setToggleMenu] = useState(false);
   return (
     <nav className='app_navbar'>
         <div className='app_navbar-logo'>
-            <h1>Qraft <br/> <span className='store'>Store</span></h1>
+           <img src={images.logo} alt='homepage' className='qraft-logo' />
         </div>
         <div className='app_search-box'>
             <form action=''>
@@ -22,9 +26,9 @@ const [toggleMenu, setToggleMenu] = useState(false);
             </form>
         </div>
         <ul className='app_navbar-links'>
-            <li className='p_opensans'><a href='#home' className='active'>Home</a></li>
-            <li className='p_opensans'><a href='#artists'>Featured artists</a></li>
-            <li className='p_opensans'><a href='#freelancer'>Become freelancer</a></li>
+            <li className='p_opensans'><Link to='/' className='active'>Home</Link></li>
+            <li className='p_opensans'><Link to='/artists'>Featured artists</Link></li>
+            <li className='p_opensans'><Link to='/freelancer'>Become freelancer</Link></li>
         </ul>
         <div className='app_navbar-right'>
             <FiShoppingCart className='cart'/>

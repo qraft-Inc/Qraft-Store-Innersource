@@ -1,7 +1,9 @@
 
 import React from 'react'
 
-import { Events, Home, Category, Testimonials, Service } from './container';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import { Events, Home, Category, Testimonials, Service, Freelancer } from './container';
 import { Navbar, Footer } from './components';
 
 
@@ -9,17 +11,20 @@ import './App.css';
 
 const App = () => {
   return (
-
-    <div>
-      <Navbar/>
-      <Home/>
-      <Category/>
-      <Service/>
-      <Events/>
-      <Testimonials/>
-      <Footer/>
-
-    </div>
+    <Router>
+      <div>
+        <Navbar/>
+        <Routes>
+          <Route path='/' element={<Home/>}></Route>
+          <Route path='/freelancer' element={<Freelancer/>}></Route>
+        </Routes>
+        <Category/>
+        <Service/>
+        <Events/>
+        <Testimonials/>
+        <Footer/>
+      </div>
+    </Router>
   )
 }
 
