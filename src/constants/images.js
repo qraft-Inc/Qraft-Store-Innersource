@@ -1,3 +1,4 @@
+import logo from '../assets/logo.png';
 import homeimg1 from '../assets/homeimg1.jpg';
 import homeimg2 from '../assets/homeimg2.jpg';
 import card1 from '../assets/card1.JPG';
@@ -11,6 +12,7 @@ import event3 from '../assets/event3.JPG';
 import testimonial1 from '../assets/testimonial1.JPG';
 
 export default {
+    logo,
     homeimg1,
     homeimg2,
     card1,
