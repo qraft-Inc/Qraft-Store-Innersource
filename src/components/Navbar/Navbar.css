@@ -16,22 +16,9 @@
     margin-left: 50px;
 }
 
-.graft-logo{
+.qraft-logo{
     width: 75px;
     height: 50px;
-}
-
-
-.app_navbar-logo h1{
-    color: var(--color-white);
-}
-
-.store {
-    position: relative;
-    font-size: 25px;
-    left: 22px;
-    top: -15px;
-    color: var(--color-pink);
 }
 
 .app_search-box {

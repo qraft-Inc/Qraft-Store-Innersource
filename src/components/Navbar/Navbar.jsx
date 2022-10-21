@@ -17,7 +17,7 @@ const [toggleMenu, setToggleMenu] = useState(false);
   return (
     <nav className='app_navbar'>
         <div className='app_navbar-logo'>
-           <img src={images.logo} alt='homepage' className='graft-logo' />
+           <img src={images.logo} alt='homepage' className='qraft-logo' />
         </div>
         <div className='app_search-box'>
             <form action=''>
