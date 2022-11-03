@@ -2,8 +2,8 @@ import Events from './FeaturedEvent/Events';
 import Category from './Category/Category';
 import Testimonials from './Testimonials/Testimonials';
 import Home from './Home/Home';
-import Service from './Service/Service';
-import Freelancer from './Freelancer/Freelancer';
+import Service from './OurService/Service';
+
 
 
 export {
@@ -12,5 +12,4 @@ export {
   Testimonials,
   Home,
   Service,
-  Freelancer,
 };

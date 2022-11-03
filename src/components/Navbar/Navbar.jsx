@@ -27,7 +27,7 @@ const [toggleMenu, setToggleMenu] = useState(false);
         </div>
         <ul className='app_navbar-links'>
             <li className='p_opensans'><Link to='/' className='active'>Home</Link></li>
-            <li className='p_opensans'><Link to='/artists'>Featured artists</Link></li>
+            <li className='p_opensans'><Link to='/artist'>Featured artists</Link></li>
             <li className='p_opensans'><Link to='/freelancer'>Become freelancer</Link></li>
         </ul>
         <div className='app_navbar-right'>
