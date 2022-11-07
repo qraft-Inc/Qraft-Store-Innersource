@@ -3,8 +3,34 @@ import logo from './logo.svg';
 import  LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GoogleIcon from '@mui/icons-material/Google';
 import TwitterIcon from '@mui/icons-material/Twitter';
+import { useState } from 'react';
+import axios from "axios"; 
 const qraft= new URL('./images/qraft.png',import.meta.url);
+
 export default function Form(){
+
+    const handleSubmit=(e) => {
+        e.preventDefault();
+        const user = {
+          name: this.state.name
+          
+          
+        }
+        axios.post('api/auth/register', { user })
+          .then(res=>{
+            console.log(res);
+            console.log(res.data);
+            window.location = "/retrieve" //This line of code will redirect you once the submission is succeed
+          })
+      }
+      const handleChange=(e) =>{
+        this.setState({ name: e.target.value});
+        
+      }
+
+
+
+// render() {
     return(
         <section>
             <div className="register">
@@ -17,8 +43,8 @@ export default function Form(){
                 <form id="form" className="flex flex-col">
                     <input type="text" placeholder='username'/>
                     <input type="text" placeholder='email'/>
-                    <input type="text" placeholder='password'/>
-                    <input type="text" placeholder='confirm password'/>
+                    <input type="password" placeholder='password'/>
+                    <input type="password" placeholder='confirm password'/>
                     <button className='btn'>Sign in</button>
                   {/* <HorizontalRule className ="line"/>or sign up with
                   <HorizontalRule className ="line"/> */}
@@ -39,4 +65,5 @@ export default function Form(){
             </div>
         </section>
     )
+// }
 }
