@@ -2,10 +2,11 @@ import React from 'react'
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import { Events, Home, Category, Testimonials, Service } from './container';
-import { Navbar, Footer } from './components';
+import { Home } from './container';
+import { Navbar } from './components';
 import Freelancer from './pages/Freelancer/Freelancer';
 import Artist from './pages/Artists/Artist';
+import Login from './pages/Auth/Login';
 
 import './constants/styles/App.css';
 
@@ -15,15 +16,11 @@ const App = () => {
       <div>
         <Navbar/>
         <Routes>
-          <Route path='/' element={<Home/>}></Route>
+          <Route path='/' exact element={<Home/>}></Route>
           <Route path='/freelancer' element={<Freelancer/>}></Route>
           <Route path='/artist' element={<Artist/>}></Route>
-        </Routes>
-        <Category/>
-        <Service/>
-        <Events/>
-        <Testimonials/>
-        <Footer/>
+          <Route path='/login' element={<Login/>}></Route>
+        </Routes>  
       </div>
     </Router>
   )

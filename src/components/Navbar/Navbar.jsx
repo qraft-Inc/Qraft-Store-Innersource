@@ -32,8 +32,8 @@ const [toggleMenu, setToggleMenu] = useState(false);
         </ul>
         <div className='app_navbar-right'>
             <FiShoppingCart className='cart'/>
-            <a href='#login' className='p_opensans app_sign'>Sign Up </a>
-            <a href='#login' className='p_opensans app_login'>Login </a>
+            <a href='#login' className='p_opensans app_sign'><Link to='/sign-up'>Sign Up </Link></a>
+            <a href='#login' className='p_opensans app_login'><Link to='/login'>Login </Link></a>
         </div>
         <div className='app_navbar-smallscreen'>
             <GiHamburgerMenu className='nav_menu' color="#fff" fontSize={26} onClick={() => setToggleMenu(true)}/>

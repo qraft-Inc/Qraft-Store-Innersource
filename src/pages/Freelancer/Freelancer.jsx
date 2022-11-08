@@ -8,6 +8,7 @@ const Freelancer = () => (
       <h1>Freelancer Page</h1>
       <p className='p_opensans'>Become a Freelancer and connect independent artists to people or business with gigs.</p>
     </div>
+
   </div>
 )
 
