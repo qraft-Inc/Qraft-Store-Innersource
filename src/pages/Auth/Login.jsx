@@ -6,6 +6,7 @@ import { images } from '../../constants';
 import './Login.css';
 
 const Login = () => {
+
   return (
     <div className='app_login section_padding'>
       <div className='app_login-container'>
