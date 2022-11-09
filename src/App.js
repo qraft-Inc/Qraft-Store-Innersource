@@ -7,6 +7,7 @@ import { Navbar } from './components';
 import Freelancer from './pages/Freelancer/Freelancer';
 import Artist from './pages/Artists/Artist';
 import Login from './pages/Auth/Login';
+import SignUp from './pages/Auth/SignUp';
 
 import './constants/styles/App.css';
 
@@ -20,6 +21,7 @@ const App = () => {
           <Route path='/freelancer' element={<Freelancer/>}></Route>
           <Route path='/artist' element={<Artist/>}></Route>
           <Route path='/login' element={<Login/>}></Route>
+          <Route path='/sign-up' element={<SignUp/>}></Route>
         </Routes>  
       </div>
     </Router>
