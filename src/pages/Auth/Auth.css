@@ -1,0 +1,222 @@
+.app_logIn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-alt);
+    border: none;
+}
+
+.app_login-container{
+    position: relative;
+    max-width: 850px;
+    width: 100%;
+    margin-top: 6em;
+    padding: 40px 30px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    perspective: 2700px;
+    background: pink;
+}
+
+.app_login-container .app_login-cover{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    width: 50%;
+    z-index: 98;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    transform-origin: left;
+    -webkit-transform-origin: left;
+    
+}
+
+.app_login-container .app_login-cover::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: var(--color-pink);
+    opacity: 0.5;
+    z-index: 100;
+}
+
+.app_login-container .app_login-cover img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: 12;
+}
+
+.app_login-container .app_login-cover .text{
+    position: absolute;
+    z-index: 111;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.app_login-cover .text .text-1,
+.app_login-cover .text .text-2{
+    font-size: 26px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+}
+
+.app_login-cover .text .text-2{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.app_login-container .form-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.app_login-container form{
+    height: 100%;
+    width: 100%;
+}
+
+.form-content .app_login-form,
+.form-content .app_signUp-form{
+   width: calc(100% / 2 - 25px);
+}
+
+form .form-content .login-title{
+    position: relative;
+    font-size: 24px;
+    font-weight: 500;
+    color: #333;
+}
+
+form .form-content .login-title:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 25px;
+    background: var(--color-pink);
+}
+
+form .app_signUp-form .login-title:before{
+    width: 20px;
+}
+
+form .form-content .input_box-container{
+    margin-top: 30px;
+}
+
+form .form-content .input-box{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    margin: 10px 0;
+    position: relative;
+}
+
+.form-content .input-box input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 0 30px;
+    font-size: 14px;
+    font-weight: 500;
+    background: transparent;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    transition: all 0.4s ease;
+}
+
+.form-content .input-box input:focus,
+.form-content .input-box input:valid{
+  border-color: var(--color-pink);
+}
+
+.form-content .input-box .input-icon{
+    position: absolute;
+    font-size: 17px;
+    color: var(--color-pink);
+}
+
+form .form-content .order-text{
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+}
+
+form .form-content .forgot-pass a{
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    text-decoration: none;
+}
+
+form .form-content .forgot-pass a:hover{
+    text-decoration: underline;
+    color: var(--color-pink);
+}
+
+form .form-content .button{
+    color: #fff;
+    margin-top: 40px;
+}
+
+form .form-content .button input{
+    color: #fff;
+    background: var(--color-pink);
+    border-radius: 6px;
+    padding: 0;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 15px;
+    transition: all 0.4s ease;
+}
+form .form-content .button input:hover{
+    background: rgb(121, 2, 56);
+}
+
+form .form-content .order-text .label{
+    color: var(--color-pink);
+    cursor: pointer;
+}
+
+form .form-content .order-text .label:hover{
+    text-decoration: underline;
+}
+
+form .form-content .login-text,
+form .form-content .sign-up-text{
+  text-align: center;
+  margin-top: 25px;
+}
+.app_login-container #flip{
+  display: none;
+}
+
+@media (max-width: 730px) {
+    .app_login-container .app_login-cover{
+      display: none;
+    }
+    .form-content .app_login-form,
+    .form-content .app_signUp-form{
+      width: 100%;
+    }
+    .form-content .app_signUp-form{
+      display: none;
+    }
+    .app_login-container #flip:checked ~ form .app_signUp-form{
+      display: block;
+    }
+    .app_login-container #flip:checked ~ form .app_login-form{
+      display: none;
+    }
+}

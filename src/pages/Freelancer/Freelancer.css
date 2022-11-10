@@ -1,0 +1,15 @@
+.freelance_banner{
+  background-color: var(--color-black-russian);
+  min-height: 100vh;
+}
+
+.banner-info h1{
+  text-align: center;
+  color: var(--color-white);
+  font-size: 50px;
+}
+  
+.banner-info p{
+  text-align: center;
+}
+  

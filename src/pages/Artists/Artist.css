@@ -1,0 +1,15 @@
+.artist_banner{
+    background-color: var(--color-black-russian);
+    min-height: 100vh;
+  }
+  
+  .artist_banner-info h1{
+    text-align: center;
+    color: var(--color-white);
+    font-size: 50px;
+  }
+    
+  .artist_banner-info p{
+    text-align: center;
+  }
+ 

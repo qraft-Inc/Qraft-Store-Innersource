@@ -10,6 +10,8 @@ import event1 from '../assets/event1.JPG';
 import event2 from '../assets/event2.JPG';
 import event3 from '../assets/event3.JPG';
 import testimonial1 from '../assets/testimonial1.JPG';
+import loginimg1 from '../assets/loginimg1.png';
+import loginimg2 from '../assets/loginimg2.JPG';
 
 export default {
     logo,
@@ -24,4 +26,6 @@ export default {
     event2,
     event3,
     testimonial1,
+    loginimg1,
+    loginimg2,
 };
