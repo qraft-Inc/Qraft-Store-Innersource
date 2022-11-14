@@ -1,14 +1,16 @@
 import React from 'react'
 import {useRef, useState, useEffect, useContext} from 'react'
 import { FaEnvelope, FaLock } from 'react-icons/fa';
+import JwtDecode from 'jwt-decode'
+import api from '../../utils/api'
 
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import { images } from '../../constants';
 import './Auth.css';
 
 const Login = () => {
-
+  const navigate = useNavigate();
   const emailRef = useRef();
   const errRef = useRef();
 
@@ -16,10 +18,6 @@ const Login = () => {
   const [pwd, setPwd] = useState('');
   const [errMsg, setErrMsg] = useState('');
   const [success, setSuccess] = useState(false);
-
-  useEffect(() => {
-    useRef.current.focus();
-  }, [])
 
   useEffect(() => {
     setErrMsg('');
@@ -31,8 +29,36 @@ const Login = () => {
     setEmail('');
     setPwd('');
     setSuccess(true);
-    
+
+
+    ///////start//////////
+    api.post('/api/auth/login',{
+      "email": email,
+      "password": pwd
+    })
+    .then(function (response) {
+
+      console.log(response.data);
+      const decodedInfo = JwtDecode(response.data.token)
+      console.log(decodedInfo)
+      if(decodedInfo.Role ==="artist"){
+        navigate('/freelancer')
+      }else if(decodedInfo.Role ==="client"){
+        navigate('/artist')
+      }else{
+        alert("admin")
+      }
+
+
+    })
+    .catch(function (error) {
+      console.log(error);
+    })
+
   }
+
+
+
 
   return (
     <>
